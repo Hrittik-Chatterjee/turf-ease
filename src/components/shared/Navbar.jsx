@@ -1,14 +1,25 @@
 // components/Navbar.js
-import Link from "next/link"; // Import Link from Next.js
+import Image from "next/image";
+import Link from "next/link";
+import logo from "../../../public/logo1.png";
+import { Bokor } from "next/font/google";
+
+const bokor = Bokor({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 const Navbar = () => {
   return (
-    <nav className="bg-white border-b border-gray-200 text-gray-900 p-4">
+    <nav className="bg-white border-b border-gray-200 text-gray-900 p-4 contianer">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
         {/* Left: Logo (if needed, you can add the logo again) */}
-        {/* <div className="flex items-center">
-          <Image src={logo} alt="Logo" width={50} height={50} />
-        </div> */}
+        <div className="flex items-center ">
+          <Image src={logo} alt="Logo" width={70} height={70} />
+          <div className={bokor.className}>
+            <p className="text-3xl hover:text-green-500">Turf Ease</p>
+          </div>
+        </div>
 
         {/* Center: Navigation Links */}
         <div className="hidden md:flex space-x-6">
