@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex items-center ">
           <Image src={logo} alt="Logo" width={70} height={70} />
           <div className={bokor.className}>
-            <p className="text-3xl hover:text-green-500">Turf Ease</p>
+            <p className="text-3xl hover:text-primary">Turf Ease</p>
           </div>
         </div>
 
@@ -25,31 +25,26 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6">
           <Link
             href="/"
-            className="hover:text-green-500 px-2 py-1 transition-colors"
+            className="hover:text-primary px-2 py-1 transition-colors"
           >
             Home
           </Link>
           <Link
             href="/contact"
-            className="hover:text-green-500 px-2 py-1 transition-colors"
+            className="hover:text-primary px-2 py-1 transition-colors"
           >
             Contact Us
           </Link>
           <Link
             href="/terms"
-            className="hover:text-green-500 px-2 py-1 transition-colors"
+            className="hover:text-primary px-2 py-1 transition-colors"
           >
             Terms and Conditions
           </Link>
-          <Link
-            href="/privacy"
-            className="hover:text-green-500 px-2 py-1 transition-colors"
-          >
-            Privacy Policy
-          </Link>
+
           <Link
             href="/register"
-            className="hover:text-green-500 px-2 py-1 transition-colors"
+            className="hover:text-primary px-2 py-1 transition-colors"
           >
             Register as Field Owner
           </Link>
@@ -59,7 +54,7 @@ const Navbar = () => {
         <div>
           <Link
             href="/signin"
-            className="hover:text-green-500 px-2 py-1 transition-colors"
+            className="hover:text-primary px-2 py-1 transition-colors"
           >
             Sign In
           </Link>
