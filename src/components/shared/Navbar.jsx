@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/register"
+            href="/field-owner"
             className="hover:text-primary px-2 py-1 transition-colors"
           >
             Register as Field Owner
@@ -53,10 +53,10 @@ const Navbar = () => {
         {/* Right: Sign In Button */}
         <div>
           <Link
-            href="/signin"
+            href="/signup"
             className="hover:text-primary px-2 py-1 transition-colors"
           >
-            Sign In
+            Sign Up
           </Link>
         </div>
       </div>
