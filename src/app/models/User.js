@@ -14,10 +14,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  role: {
-    type: String,
-    enum: ["user", "admin", "fieldOwner"], // Added "fieldOwner" role
-    default: "user",
+  isAdmin: {
+    type: Boolean,
+    default: false,
   },
   fieldOwner: {
     type: Boolean,
